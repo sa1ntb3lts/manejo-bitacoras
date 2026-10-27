@@ -316,9 +316,9 @@ java ProcesadorCalificaciones inexistente.txt
 
 Identificar:
 
-- mensajes `INFO`;
-- mensajes `SEVERE`;
-- mensajes `FINE`.
+- mensajes `INFO`; **Archivo recibido** y **Registros procesados**
+- mensajes `SEVERE`; **No se especifico archivo de entrada**
+- mensajes `FINE`. **No hubo ningun mensaje FINE, todos fueron INFO o SEVERE**
 
 
 ## Parte IV. Filtrado por niveles
