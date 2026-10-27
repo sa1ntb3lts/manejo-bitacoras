@@ -131,11 +131,11 @@ LOG.info(
 
 Responder:
 
-1. ¿Qué información adicional muestra el mensaje del Logger?
-2. ¿Aparece la fecha/hora?
-3. ¿Aparece el nombre de la clase?
-4. ¿Aparece el nivel del mensaje?
-5. ¿Cuál de los dos mecanismos proporciona más información para diagnosticar un problema?
+1. ¿Qué información adicional muestra el mensaje del Logger? Muestra el nombre del archivo que se esta procesando.
+2. ¿Aparece la fecha/hora? Si.
+3. ¿Aparece el nombre de la clase? Si.
+4. ¿Aparece el nivel del mensaje? Si, en este caso es INFO.
+5. ¿Cuál de los dos mecanismos proporciona más información para diagnosticar un problema? LOG proporciona mas informacion.
 
 
 ## Parte II. Niveles de logging
