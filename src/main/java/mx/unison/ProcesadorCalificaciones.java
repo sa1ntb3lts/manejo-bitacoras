@@ -16,7 +16,7 @@ public class ProcesadorCalificaciones {
 
     public static void main(String[] args) {
         LOG.setUseParentHandlers(false);
-        LOG.setLevel(Level.FINE);
+        LOG.setLevel(Level.ALL);
 
         ConsoleHandler consola = new ConsoleHandler();
 
