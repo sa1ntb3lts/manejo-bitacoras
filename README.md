@@ -1,6 +1,6 @@
-NOMBRE: [Tu Nombre]
+NOMBRE: Santiago Beltran Astorga
 
-EXPEDIENTE: [Tu Expediente]
+EXPEDIENTE: 225203551
 
 # Práctica guiada: Logging en Java con `java.util.logging`
 
