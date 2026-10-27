@@ -59,6 +59,39 @@ public class ProcesadorCalificaciones {
                     "Procesando línea "
                     + contador
                 );
+
+                try {
+
+                    int calificacion =
+                        Integer.parseInt(
+                            linea.trim()
+                        );
+
+                    if (
+                        calificacion < 0
+                        || calificacion > 100
+                    ) {
+
+                        LOG.warning(
+                            "Calificación fuera de rango: "
+                            + calificacion
+                        );
+
+                        continue;
+                    }
+
+                    LOG.fine(
+                        "Calificación válida: "
+                        + calificacion
+                    );
+
+                } catch (NumberFormatException e) {
+
+                    LOG.warning(
+                        "Dato no numérico: "
+                        + linea
+                    );
+                }
             }
 
             LOG.info(
