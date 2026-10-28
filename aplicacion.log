@@ -1,0 +1,24 @@
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+INFO: Archivo recibido: .\src\main\java\mx\unison\calificaciones.txt
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Procesando línea 1
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Calificación válida: 40
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Procesando línea 2
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Calificación válida: 10
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Procesando línea 3
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Calificación válida: 0
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Procesando línea 4
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Calificación válida: 25
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Procesando línea 5
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+FINE: Calificación válida: 21
+Oct 27, 2026 5:29:25 PM mx.unison.ProcesadorCalificaciones main
+INFO: Registros procesados: 5
