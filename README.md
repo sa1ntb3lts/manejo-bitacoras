@@ -657,11 +657,11 @@ aplicacion.log
 
 | Característica | XML | Texto |
 |---|----|---|
-| Fácil de leer por una persona | | |
-| Fácil de procesar automáticamente | | |
-| Estructura explícita | | |
-| Tamaño más compacto | | |
-| Adecuado para inspección rápida | | |
+| Fácil de leer por una persona | No | Si |
+| Fácil de procesar automáticamente | Si | Si |
+| Estructura explícita | Si | No |
+| Tamaño más compacto | No | Si |
+| Adecuado para inspección rápida | No | Si |
 
 
 
