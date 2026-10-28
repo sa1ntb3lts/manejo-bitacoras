@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Logger;
 import java.util.logging.ConsoleHandler;
+import java.util.logging.FileHandler;
 import java.util.logging.Level;
 
 public class ProcesadorCalificaciones {
@@ -23,6 +24,24 @@ public class ProcesadorCalificaciones {
         consola.setLevel(Level.FINE);
 
         LOG.addHandler(consola);
+
+        try {
+
+            FileHandler archivoLog =
+                new FileHandler(
+                    "Logging.xml"
+                );
+
+            LOG.addHandler(
+                archivoLog
+            );
+
+        } catch (IOException e) {
+
+            System.err.println(
+                "No fue posible crear el log"
+            );
+        }
 
         if (args.length == 0) {
 
@@ -99,8 +118,8 @@ public class ProcesadorCalificaciones {
                 + contador
             );
 
-        }catch (IOException e) {
-            LOG.log(Level.SEVERE,"Error durante la lectura del archivo",e);
+        } catch (IOException e) {
+            LOG.log(Level.SEVERE, "Error durante la lectura del archivo", e);
         }
     }
 }
