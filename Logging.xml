@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-28T00:08:11.697840300Z</date>
+  <millis>1793146091697</millis>
+  <nanos>840300</nanos>
+  <sequence>0</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>INFO</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Archivo recibido: .\src\main\java\mx\unison\calificaciones.txt</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.729645700Z</date>
+  <millis>1793146091729</millis>
+  <nanos>645700</nanos>
+  <sequence>1</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Procesando línea 1</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.731212700Z</date>
+  <millis>1793146091731</millis>
+  <nanos>212700</nanos>
+  <sequence>2</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 40</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.732249900Z</date>
+  <millis>1793146091732</millis>
+  <nanos>249900</nanos>
+  <sequence>3</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Procesando línea 2</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.733227500Z</date>
+  <millis>1793146091733</millis>
+  <nanos>227500</nanos>
+  <sequence>4</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 10</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.733227500Z</date>
+  <millis>1793146091733</millis>
+  <nanos>227500</nanos>
+  <sequence>5</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Procesando línea 3</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.735227300Z</date>
+  <millis>1793146091735</millis>
+  <nanos>227300</nanos>
+  <sequence>6</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 0</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.735227300Z</date>
+  <millis>1793146091735</millis>
+  <nanos>227300</nanos>
+  <sequence>7</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Procesando línea 4</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.736229300Z</date>
+  <millis>1793146091736</millis>
+  <nanos>229300</nanos>
+  <sequence>8</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 25</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.736229300Z</date>
+  <millis>1793146091736</millis>
+  <nanos>229300</nanos>
+  <sequence>9</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Procesando línea 5</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.737753700Z</date>
+  <millis>1793146091737</millis>
+  <nanos>753700</nanos>
+  <sequence>10</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 21</message>
+</record>
+<record>
+  <date>2026-10-28T00:08:11.738766500Z</date>
+  <millis>1793146091738</millis>
+  <nanos>766500</nanos>
+  <sequence>11</sequence>
+  <logger>mx.unison.ProcesadorCalificaciones</logger>
+  <level>INFO</level>
+  <class>mx.unison.ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Registros procesados: 5</message>
+</record>
+</log>
