@@ -1,24 +1,24 @@
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-INFO: Archivo recibido: .\src\main\java\mx\unison\calificaciones.txt
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-FINE: Procesando línea 1
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:35 PM mx.unison.ProcesadorCalificaciones main
+INFO: Inicio de la aplicación
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones main
+CONFIG: Archivo configurado: .\src\main\java\mx\unison\calificaciones.txt
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
+FINE: Archivo abierto correctamente
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 FINE: Calificación válida: 40
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-FINE: Procesando línea 2
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 FINE: Calificación válida: 10
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-FINE: Procesando línea 3
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 FINE: Calificación válida: 0
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-FINE: Procesando línea 4
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 FINE: Calificación válida: 25
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
-FINE: Procesando línea 5
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 FINE: Calificación válida: 21
-Oct 27, 2026 9:30:03 PM mx.unison.ProcesadorCalificaciones main
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
 INFO: Registros procesados: 5
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
+INFO: Registros válidos: 5
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones procesarArchivo
+INFO: Promedio: 19.2
+Oct 27, 2026 9:48:36 PM mx.unison.ProcesadorCalificaciones main
+INFO: Fin de la aplicación
