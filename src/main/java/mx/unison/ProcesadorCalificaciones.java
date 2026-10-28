@@ -3,10 +3,10 @@ package mx.unison;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Logger;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class ProcesadorCalificaciones {
@@ -17,42 +17,73 @@ public class ProcesadorCalificaciones {
         );
 
     public static void main(String[] args) {
+
         configurarLogger();
+
+        LOG.info(
+            "Inicio de la aplicación"
+        );
 
         if (args.length == 0) {
 
             LOG.severe(
-                "No se especificó archivo de entrada"
+                "No se especificó archivo"
             );
 
             return;
         }
 
-        String archivo = args[0];
+        String nombreArchivo =
+            args[0];
+
+        LOG.config(
+            "Archivo configurado: "
+            + nombreArchivo
+        );
+
+        procesarArchivo(
+            nombreArchivo
+        );
 
         LOG.info(
-            "Archivo recibido: " + archivo
+            "Fin de la aplicación"
         );
+    }
+
+    private static void procesarArchivo(
+            String nombreArchivo) {
+
+        int registros = 0;
+        int validos = 0;
+        double suma = 0;
 
         try (
             BufferedReader lector =
                 new BufferedReader(
-                    new FileReader(archivo)
+                    new FileReader(
+                        nombreArchivo
+                    )
                 )
         ) {
 
+            LOG.fine(
+                "Archivo abierto correctamente"
+            );
+
             String linea;
-            int contador = 0;
 
             while (
-                (linea = lector.readLine()) != null
+                (linea = lector.readLine())
+                != null
             ) {
 
-                contador++;
+                registros++;
 
-                LOG.fine(
+                LOG.finer(
                     "Procesando línea "
-                    + contador
+                    + registros
+                    + ": "
+                    + linea
                 );
 
                 try {
@@ -68,19 +99,24 @@ public class ProcesadorCalificaciones {
                     ) {
 
                         LOG.warning(
-                            "Calificación fuera de rango: "
+                            "Valor fuera de rango: "
                             + calificacion
                         );
 
                         continue;
                     }
 
+                    validos++;
+                    suma += calificacion;
+
                     LOG.fine(
                         "Calificación válida: "
                         + calificacion
                     );
 
-                } catch (NumberFormatException e) {
+                } catch (
+                    NumberFormatException e
+                ) {
 
                     LOG.warning(
                         "Dato no numérico: "
@@ -91,11 +127,33 @@ public class ProcesadorCalificaciones {
 
             LOG.info(
                 "Registros procesados: "
-                + contador
+                + registros
             );
 
+            LOG.info(
+                "Registros válidos: "
+                + validos
+            );
+
+            if (validos > 0) {
+
+                double promedio =
+                    suma / validos;
+
+                LOG.info(
+                    "Promedio: "
+                    + promedio
+                );
+            }
+
         } catch (IOException e) {
-            LOG.log(Level.SEVERE, "Error durante la lectura del archivo", e);
+
+            LOG.log(
+                Level.SEVERE,
+                "Error al procesar archivo "
+                + nombreArchivo,
+                e
+            );
         }
     }
 
@@ -104,13 +162,14 @@ public class ProcesadorCalificaciones {
         try {
 
             LOG.setUseParentHandlers(false);
-
-            LOG.setLevel(Level.FINE);
+            LOG.setLevel(Level.ALL);
 
             ConsoleHandler consola =
                 new ConsoleHandler();
 
-            consola.setLevel(Level.INFO);
+            consola.setLevel(
+                Level.INFO
+            );
 
             LOG.addHandler(
                 consola
@@ -136,7 +195,7 @@ public class ProcesadorCalificaciones {
         } catch (IOException e) {
 
             System.err.println(
-                "No fue posible configurar logging: "
+                "Error configurando Logger: "
                 + e.getMessage()
             );
         }
