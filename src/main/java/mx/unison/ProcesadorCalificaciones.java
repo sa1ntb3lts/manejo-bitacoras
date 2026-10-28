@@ -17,39 +17,7 @@ public class ProcesadorCalificaciones {
         );
 
     public static void main(String[] args) {
-        LOG.setUseParentHandlers(false);
-        LOG.setLevel(Level.ALL);
-
-        ConsoleHandler consola = new ConsoleHandler();
-
-        consola.setLevel(Level.FINE);
-
-        LOG.addHandler(consola);
-
-        try {
-
-            FileHandler archivoLog =
-                new FileHandler(
-                    "aplicacion.log"
-                );
-
-            SimpleFormatter formato =
-                new SimpleFormatter();
-
-            archivoLog.setFormatter(
-                formato
-            );
-
-            LOG.addHandler(
-                archivoLog
-            );
-
-        } catch (IOException e) {
-
-            System.err.println(
-                "No fue posible crear el log"
-            );
-        }
+        configurarLogger();
 
         if (args.length == 0) {
 
@@ -128,6 +96,49 @@ public class ProcesadorCalificaciones {
 
         } catch (IOException e) {
             LOG.log(Level.SEVERE, "Error durante la lectura del archivo", e);
+        }
+    }
+
+    private static void configurarLogger() {
+
+        try {
+
+            LOG.setUseParentHandlers(false);
+
+            LOG.setLevel(Level.FINE);
+
+            ConsoleHandler consola =
+                new ConsoleHandler();
+
+            consola.setLevel(Level.INFO);
+
+            LOG.addHandler(
+                consola
+            );
+
+            FileHandler archivo =
+                new FileHandler(
+                    "procesador.log"
+                );
+
+            archivo.setLevel(
+                Level.FINE
+            );
+
+            archivo.setFormatter(
+                new SimpleFormatter()
+            );
+
+            LOG.addHandler(
+                archivo
+            );
+
+        } catch (IOException e) {
+
+            System.err.println(
+                "No fue posible configurar logging: "
+                + e.getMessage()
+            );
         }
     }
 }
